@@ -1,1 +1,44 @@
 hello git
+
+Microsoft Windows [Version 10.0.18362.535]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\alisher>cd C:\localGitrepo
+
+C:\localGitrepo>git init
+Initialized empty Git repository in C:/localGitrepo/.git/
+
+C:\localGitrepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        DummyProject/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\localGitrepo>git config --global user.name "aliadams84"
+
+C:\localGitrepo>git config --global user.email "adams.apache@gmail.com"
+
+C:\localGitrepo>git add .
+
+C:\localGitrepo>git commit -m "firstcommit"
+[master (root-commit) ad1f951] firstcommit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 DummyProject/DummyProject.txt
+
+C:\localGitrepo>git remote add origin https://github.com/aliadams84/selenium_repo.git
+
+C:\localGitrepo>git push -u origin master  
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 273 bytes | 273.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/aliadams84/selenium_repo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\localGitrepo>
